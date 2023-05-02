@@ -25,6 +25,7 @@ function App() {
         
         const newTask = { id: Date.now(), text: text, completed: false };
         setTask([...tasks, newTask]);
+        
         };
 
     const deleteTask = (id) => {
