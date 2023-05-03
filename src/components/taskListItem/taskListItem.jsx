@@ -32,19 +32,24 @@ const TaskListItem = (props) => {
         for (let i = 0; i < textareas.length; i++) {
             const textarea = textareas[i];
             textarea.style.height = "auto";
-            if (textarea.scrollHeight > 3.6 + "em") {
-                textarea.style.height = 3.6 + "em";
+            if (textarea.scrollHeight > 4.8 + "em") {
+                textarea.style.height = 5.8 + "em";
             } else {
                 textarea.style.height = textarea.scrollHeight + "px";
             }
         }
     }
 
+    const delTask = (event, id) => {
+        event.preventDefault();
+        deleteTask(id);
+    }
+
     return (
         <li className="taskListItem">
             <input onChange={toggleTask} type="checkbox" className='taskListItemCheckbox' id="myCheckbox" checked={completed} />
             <textarea rows={1} onChange={handleChange} className='taskListItemInput' value={text} style={textStyle} />
-            <a onClick={deleteTask} href='#' className='trashButton' />
+            <a onClick={delTask} href='#' className='trashButton' />
         </li>
     )
 }
