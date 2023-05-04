@@ -1,0 +1,34 @@
+@import url(../../fonts/fonts.scss);
+
+.containerEmpt {
+    margin-top: 25px;
+    width: 100%;
+    border-top: 1px solid #333333;
+    border-radius: 8px;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 64px 24px;
+        .title {
+            margin-top: 16px;
+            font-family: 'InterBold';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            color: #808080;
+        }
+        .descr {
+            font-family: 'InterRegular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            color: #808080;
+        }
+    }
+}

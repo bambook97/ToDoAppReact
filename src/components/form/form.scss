@@ -1,0 +1,45 @@
+@import url(../../fonts/fonts.scss);
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 172px;
+    max-width: 730px;
+    width: 100%;
+    z-index: 1;
+    transition: .3s all;
+    .addTaskForm {
+        background: #262626;
+        border: 1px solid #0D0D0D;
+        border-radius: 8px;
+        margin-right: 8px;
+        padding: 16px;
+        width: 90%;
+        font-family: 'InterRegular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #808080;
+        outline: none;
+        transition: 0.3s all;
+    }
+    :focus {
+        border: 2px solid #5E60CE;
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        top: 153px;
+        width: 530px;
+    }
+}
+
+@media (max-width: 565px) {
+    .container {
+        width: 400px;
+    }
+}

@@ -1,0 +1,27 @@
+@import url(../../fonts/fonts.scss);
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.components {
+    margin: 0 auto;
+    width: 740px;
+}
+
+@media (max-width: 768px) {
+    .components {
+        width: 530px;
+    }
+}
+
+@media (max-width: 565px) {
+    .components {
+        width: 400px;
+    }
+}
+
